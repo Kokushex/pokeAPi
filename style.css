@@ -1,0 +1,54 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10rem;
+    background-color: #330055;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23330055' cx='50' cy='0' r='50'/%3E%3Cg fill='%23331161' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23311e6d' cx='50' cy='100' r='50'/%3E%3Cg fill='%232e2a79' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%232a3584' cx='50' cy='200' r='50'/%3E%3Cg fill='%2324408f' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%231c4a9a' cx='50' cy='300' r='50'/%3E%3Cg fill='%230f55a4' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23005fae' cx='50' cy='400' r='50'/%3E%3Cg fill='%23006ab7' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%230075bf' cx='50' cy='500' r='50'/%3E%3Cg fill='%23007fc8' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23008acf' cx='50' cy='600' r='50'/%3E%3Cg fill='%230095d7' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23009fdd' cx='50' cy='700' r='50'/%3E%3Cg fill='%2300aae4' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%2300b4ea' cx='50' cy='800' r='50'/%3E%3Cg fill='%2300bff0' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%2318caf5' cx='50' cy='900' r='50'/%3E%3Cg fill='%2330d4fa' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%2343DFFF' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: contain;
+    
+}
+.primera{
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "img" "datos";
+    
+}
+
+.card{
+    min-width: 15rem;
+    background-color: rgba(33, 37,41, 0.8);
+    border-radius: 10px;
+}
+.card-header{
+    text-transform: capitalize;
+}
+
+.card-title{
+    text-transform: capitalize;
+}
+
+.card-text{
+    text-decoration: overline;
+}
+
+.circulo {
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #5cb85c;
+}
+
+#imagen-pkmn{
+    grid-area:img;
+}
+
+#datos-pkmn{
+    grid-area:datos;
+}
